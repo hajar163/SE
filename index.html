@@ -1,17 +1,99 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Your front-end</title>
+<title>food text classification</title>
+
+<script>
+	function clear(){
+		document.getElementById('Text').value = '';
+	}
+	</script>
+	<style>
+		.center {
+		  margin: auto;
+		  margin-top: 90px;
+		  width: 30%;
+		  border: 3px solid #3e3f3c;
+		  padding: 10px;
+		  text-align: center;
+		}
+		</style>
 </head>
 
 <body>
-<form action="/fasttext">
+	<div class="center">
+		<h3>Food Classification System</h3>
+<form action="/fasttext" onsubmit="clear()">
+	<img src="Screen Shot 1443-05-10 at 9.30.41 PM.png" alt="logo" width="150" height="150">
+<label></label>
+<br>
 	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
+	<textarea id='Text' name="Text" rows="10" cols="30"></textarea>
+	<br>
+	<input type="submit" value="Submit Result" onclick="document.getElementById('result').value =  document.getElementById('result').value +document.getElementById('Text').value ">
+	<input type="submit" value="Clear Text" onclick="document.getElementById('Text').value = ''">
+	
+	<hr>
+	<label>Your Text Classification </label>
+	<br>
+	<textarea readonly id='result' name="Result" rows="10" cols="30"> </textarea>
 </form> 
+<script>
+	function clear(){
+		document.getElementById('Text').value = '';
+	}
+	</script>
+	</div>
+</body>
 
+</html> <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>food text classification</title>
+
+<script>
+	function clear(){
+		document.getElementById('Text').value = '';
+	}
+	</script>
+	<style>
+		.center {
+		  margin: auto;
+		  margin-top: 90px;
+		  width: 30%;
+		  border: 3px solid #3e3f3c;
+		  padding: 10px;
+		  text-align: center;
+		}
+		</style>
+</head>
+
+<body>
+	<div class="center">
+		<h3>Food Classification System</h3>
+<form action="/fasttext" onsubmit="clear()">
+	<img src="Screen Shot 1443-05-10 at 9.30.41 PM.png" alt="logo" width="150" height="150">
+<label></label>
+<br>
+	Enter your text to be classified<br>
+	<textarea id='Text' name="Text" rows="10" cols="30"></textarea>
+	<br>
+	<input type="submit" value="Submit Result" onclick="document.getElementById('result').value =  document.getElementById('result').value +document.getElementById('Text').value ">
+	<input type="submit" value="Clear Text" onclick="document.getElementById('Text').value = ''">
+	
+	<hr>
+	<label>Your Text Classification </label>
+	<br>
+	<textarea readonly id='result' name="Result" rows="10" cols="30"> </textarea>
+</form> 
+<script>
+	function clear(){
+		document.getElementById('Text').value = '';
+	}
+	</script>
+	</div>
 </body>
 
 </html> 
