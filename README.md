@@ -1,2 +1,3 @@
-# SE
-workshop2
+# Food Text Classifier
+## what is the project about?
+
