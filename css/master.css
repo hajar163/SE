@@ -1,0 +1,115 @@
+body{
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+
+.main_header{
+    display: inline;
+    font-size: 50px;
+}
+
+header li img{
+    width: 135px;
+    float: right;
+    margin-top: -20px; 
+
+}
+
+/* box creation*/
+.container{
+    margin-top: 1%;
+    margin-left: 30%;
+    padding: 15px;
+    width: 310px;
+    border: 1px solid #ededed;
+
+    -moz-box-shadow: 0px,0px,5px,1px rgba(0,0,0,0.03);
+    -webkit-box-shadow: 0px,0px,5px,1px rgba(0,0,0,0.03);
+    -box-shadow: 0px,0px,5px,1px rgba(0,0,0,0.03);
+
+}
+
+textarea{
+    margin: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+label1.labels{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type=text]{
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.output{
+    margin-top: 1%;
+    width: 310px;
+    border: 1px solid #ededed;
+}
+
+/*--- submitt button---*/
+.btn{
+    outline: none;
+    display: inline;
+    border: 0;
+    font-size: 16px;
+    line-height: 2;
+    padding: 30x 30px;
+    border-radius: 30px;
+    background: #ff725e;
+    color: #ffffff;
+    cursor:pointer;
+    transition: all 0.3s linear;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn:hover,
+.btn:focus{
+    background: #bd4f40;
+}
+
+.btn:active{
+    background: #66362f;
+}
+
+/*----reset button ---*/
+.btn-outline{
+    outline: none;
+    border: solid 1px #ff725e;
+    font-size: 16px;
+    font-weight:500;
+    line-height: 2;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #ff725e;
+    cursor:pointer;
+    transition: all 0.3s linear;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-outline:hover,
+.btn-outline:focus{
+    background: #ff725e;
+    color: #ffffff;
+}
+
+.btn-outline:active{
+    background: #ffffff;
+    color: #ff725e;
+}
