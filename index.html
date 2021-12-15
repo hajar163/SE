@@ -1,17 +1,46 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Your front-end</title>
-</head>
+	<!---- header ---->
+	<head>
+		<meta charset="UTF-8">
+		<title>Your front-end</title>
+		<link rel="stylesheet" href="css/master.css">
+	</head>
 
-<body>
-<form action="/fasttext">
-	Enter your text to bee classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
+	<!----- body ----->
+	<body>
+		<header>
+			<ul>
+				<li class="main_header">
+					<img src="Peach.gif" alt="logo" class="logo">
+					<p>Food Text Classifire</p>
+				</li>
+			</ul>
+		</header> <br>
 
-</body>
+		<!----box------>
+		<div class="container">
+			<form action="/fasttext">
+				<label1 class="labels">Enter your text to be classified</label1><br>
+				<br>
+
+				<div class="textarea_style">
+					<input type="text" class="textarea" id="textarea" name="statement" placeholder="Enter your text here ...">
+					<br><br>
+					<input type="submit" value="submit" class="btn" onclick="dcuoment.getElementById('textarea').value=''" >
+					<input type="reset" class="btn-outline">
+					<br><br>
+
+					<label1 class="labels">output</label1><br>
+					
+					<textarea class="output" id="textarea" name="statement" cols="40" rows="4" placeholder=""">
+						
+					</textarea>
+				</div><br>
+			</form>
+			
+		</div>
+	
+	</body>
 
 </html> 
